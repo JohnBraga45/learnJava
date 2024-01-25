@@ -12,7 +12,7 @@ import java.util.Random;
 //            i++;
 //
 //        }
-        //usando for
+
         for (int i = 0; i < 6; i++ ){
         int number = generate.nextInt(10);
             System.out.println(number);
