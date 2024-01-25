@@ -1,14 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import java.util.Scanner;
+
+  public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        var welcome = "Seja Bem-Vindo ";
-        var user = "John";
+        System.out.println("Insira um número: ");
+        int numero = scanner.nextInt();
 
-        System.out.println(welcome + user);
-
+        if (numero > 0){
+            System.out.println(numero +" é positivo");
+        } else if ( numero < 0 ) {
+            System.out.println(numero +" é negativo");
+        }
+        else {
+            System.out.println(" o número é igual a: "+numero);
+        }
+    }
 
 
     }
-}
+
+
