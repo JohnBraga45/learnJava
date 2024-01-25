@@ -1,21 +1,23 @@
-import java.util.Scanner;
+import java.util.Random;
 
   public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Insira um número: ");
-        int numero = scanner.nextInt();
-
-        if (numero > 0){
-            System.out.println(numero +" é positivo");
-        } else if ( numero < 0 ) {
-            System.out.println(numero +" é negativo");
+        Random generate = new Random();
+//        Usando while
+//        int i =0;
+//        while (i < 6 ){
+//
+//            int number = generate.nextInt(10);
+//            System.out.println(number);
+//            i++;
+//
+//        }
+        //usando for
+        for (int i = 0; i < 6; i++ ){
+        int number = generate.nextInt(10);
+            System.out.println(number);
         }
-        else {
-            System.out.println(" o número é igual a: "+numero);
         }
-    }
 
 
     }
